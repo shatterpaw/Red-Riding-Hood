@@ -16,7 +16,7 @@ class GreenViewRoutable: Routable {
         self.viewController = viewController
     }
     
-    func pushRouteSegment(routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
+    func pushRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
         if let navController = self.viewController as? UINavigationController {
             let greenViewController = storyboard.instantiateViewController(withIdentifier: GreenViewControllerIdentifier)
             navController.pushViewController(
@@ -29,7 +29,7 @@ class GreenViewRoutable: Routable {
         return self
     }
     
-    func popRouteSegment(routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) {
+    func popRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) {
         completionHandler()
     }
 }

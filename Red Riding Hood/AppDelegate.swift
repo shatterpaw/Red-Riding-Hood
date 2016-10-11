@@ -7,15 +7,39 @@
 //
 
 import UIKit
+import ReSwift
+import ReSwiftRouter
+
+var store = Store<AppState>(reducer: AppReducer(), state: nil)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var router: Router<AppState>!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        /*  Set a dummy view controller to satisfy UIKit
+            Router will set correct view controller through async call.
+            Otherwise window would not have a root view controller at the 
+            completion of this method, causing a crash
+        */
+        window?.rootViewController = UIViewController()
+        
+        let rootRoutable = RootRoutable(window: window!)
+        
+        router = Router(store: store, rootRoutable: rootRoutable, stateSelector: { state in
+            return state.navigationState
+        })
+        
+        store.dispatch(ReSwiftRouter.SetRouteAction([GreenRoute]))
+        
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

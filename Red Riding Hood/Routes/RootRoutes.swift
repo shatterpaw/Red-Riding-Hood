@@ -12,6 +12,7 @@ import ReSwiftRouter
 let storyboard = UIStoryboard(name: "Main", bundle: nil)
 let GreenViewControllerIdentifier = "GreenViewController"
 let RedViewControllerIdentifier = "RedViewController"
+let MainNavControllerIdentifier = "MainNavigationController"
 let RedRoute: RouteElementIdentifier = "RedRoute"
 let GreenRoute: RouteElementIdentifier = "GreenRoute"
 
@@ -23,30 +24,30 @@ class RootRoutable: Routable {
     }
     
     func setToGreenViewController() -> Routable {
-        self.window.rootViewController = storyboard.instantiateViewController(withIdentifier: GreenViewControllerIdentifier)
+        self.window.rootViewController = storyboard.instantiateViewController(withIdentifier: MainNavControllerIdentifier)
         
         return GreenViewRoutable(viewController: self.window.rootViewController!)
     }
     
     func setToRedViewController() -> Routable {
-        self.window.rootViewController = storyboard.instantiateViewController(withIdentifier: RedViewControllerIdentifier)
+        self.window.rootViewController = storyboard.instantiateViewController(withIdentifier: MainNavControllerIdentifier)
         
         return RedViewRoutable(viewController: self.window.rootViewController!)
     }
     
-    func changeRouteSegment(from: RouteElementIdentifier, to: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) -> Routable {
+    func changeRouteSegment(_ from: RouteElementIdentifier, to: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) -> Routable {
         if to == GreenRoute {
             completionHandler()
             return self.setToGreenViewController()
         } else if to == RedRoute {
             completionHandler()
-            return self.setToGreenViewController()
+            return self.setToRedViewController()
         } else {
             fatalError("Route not supported")
         }
     }
     
-    func pushRouteSegment(routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) -> Routable {
+    func pushRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) -> Routable {
         if routeElementIdentifier == GreenRoute {
             completionHandler()
             return self.setToGreenViewController()
@@ -58,7 +59,7 @@ class RootRoutable: Routable {
         }
     }
     
-    func popRouteSegment(routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) {
+    func popRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: RoutingCompletionHandler) {
         completionHandler()
     }
 }
