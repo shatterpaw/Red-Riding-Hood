@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2ADD8ECA0F2BBE56506BB0 /* Pods_Red_Riding_Hood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F394860296827D8D3A2D6DE2 /* Pods_Red_Riding_Hood.framework */; };
+		39EEECBEA4DE065C5B037631 /* Pods_Red_Riding_HoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903216AFCF01E898FEF87EB6 /* Pods_Red_Riding_HoodTests.framework */; };
 		83A8DA171DAD48FC00312C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA161DAD48FC00312C6A /* AppDelegate.swift */; };
 		83A8DA191DAD48FC00312C6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA181DAD48FC00312C6A /* ViewController.swift */; };
 		83A8DA1C1DAD48FC00312C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A8DA1A1DAD48FC00312C6A /* Main.storyboard */; };
@@ -14,6 +16,14 @@
 		83A8DA211DAD48FC00312C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A8DA1F1DAD48FC00312C6A /* LaunchScreen.storyboard */; };
 		83A8DA2C1DAD48FC00312C6A /* Red_Riding_HoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA2B1DAD48FC00312C6A /* Red_Riding_HoodTests.swift */; };
 		83A8DA371DAD48FC00312C6A /* Red_Riding_HoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA361DAD48FC00312C6A /* Red_Riding_HoodUITests.swift */; };
+		83A8DA4A1DAD50B800312C6A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA491DAD50B800312C6A /* AppState.swift */; };
+		83A8DA4C1DAD516F00312C6A /* AuthenticationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA4B1DAD516F00312C6A /* AuthenticationActions.swift */; };
+		83A8DA4E1DAD519A00312C6A /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA4D1DAD519A00312C6A /* AppReducer.swift */; };
+		83A8DA501DAD52D800312C6A /* RootRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA4F1DAD52D800312C6A /* RootRoutes.swift */; };
+		83A8DA521DAD54EF00312C6A /* GreenViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA511DAD54EF00312C6A /* GreenViewRoutable.swift */; };
+		83A8DA551DAD580100312C6A /* NavigationController+CompletionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA541DAD580100312C6A /* NavigationController+CompletionBlock.swift */; };
+		83A8DA571DAD5BD200312C6A /* RedViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA561DAD5BD200312C6A /* RedViewRoutable.swift */; };
+		D0EEBABB0DDC18468F1C5385 /* Pods_Red_Riding_HoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980BF0BEDEE68D51EEB8D2A /* Pods_Red_Riding_HoodUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		458BBA031F914E6BBEC3CA7C /* Pods-Red Riding HoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding HoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding HoodUITests/Pods-Red Riding HoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A77AC69D446C38B16EF3635 /* Pods-Red Riding HoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding HoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding HoodTests/Pods-Red Riding HoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		8151901C14B33DEA9496AD4F /* Pods-Red Riding Hood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding Hood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding Hood/Pods-Red Riding Hood.release.xcconfig"; sourceTree = "<group>"; };
 		83A8DA131DAD48FB00312C6A /* Red Riding Hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red Riding Hood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A8DA161DAD48FC00312C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83A8DA181DAD48FC00312C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83A8DA181DAD48FC00312C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
 		83A8DA1B1DAD48FC00312C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83A8DA1D1DAD48FC00312C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A8DA201DAD48FC00312C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,19 @@
 		83A8DA321DAD48FC00312C6A /* Red Riding HoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Red Riding HoodUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A8DA361DAD48FC00312C6A /* Red_Riding_HoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red_Riding_HoodUITests.swift; sourceTree = "<group>"; };
 		83A8DA381DAD48FC00312C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A8DA491DAD50B800312C6A /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = State/AppState.swift; sourceTree = "<group>"; };
+		83A8DA4B1DAD516F00312C6A /* AuthenticationActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationActions.swift; path = Actions/AuthenticationActions.swift; sourceTree = "<group>"; };
+		83A8DA4D1DAD519A00312C6A /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppReducer.swift; path = Reducers/AppReducer.swift; sourceTree = "<group>"; };
+		83A8DA4F1DAD52D800312C6A /* RootRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootRoutes.swift; path = Routes/RootRoutes.swift; sourceTree = "<group>"; };
+		83A8DA511DAD54EF00312C6A /* GreenViewRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreenViewRoutable.swift; path = Routes/GreenViewRoutable.swift; sourceTree = "<group>"; };
+		83A8DA541DAD580100312C6A /* NavigationController+CompletionBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NavigationController+CompletionBlock.swift"; path = "Extensions/NavigationController+CompletionBlock.swift"; sourceTree = "<group>"; };
+		83A8DA561DAD5BD200312C6A /* RedViewRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedViewRoutable.swift; path = Routes/RedViewRoutable.swift; sourceTree = "<group>"; };
+		903216AFCF01E898FEF87EB6 /* Pods_Red_Riding_HoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Red_Riding_HoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A85D6273AC03B2047BB6EEC /* Pods-Red Riding Hood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding Hood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding Hood/Pods-Red Riding Hood.debug.xcconfig"; sourceTree = "<group>"; };
+		B980BF0BEDEE68D51EEB8D2A /* Pods_Red_Riding_HoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Red_Riding_HoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70037A558E8B76A36CCBC8 /* Pods-Red Riding HoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding HoodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding HoodUITests/Pods-Red Riding HoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D60D9ED98B45E0EE3BF94566 /* Pods-Red Riding HoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding HoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding HoodTests/Pods-Red Riding HoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F394860296827D8D3A2D6DE2 /* Pods_Red_Riding_Hood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Red_Riding_Hood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2ADD8ECA0F2BBE56506BB0 /* Pods_Red_Riding_Hood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EEECBEA4DE065C5B037631 /* Pods_Red_Riding_HoodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EEBABB0DDC18468F1C5385 /* Pods_Red_Riding_HoodUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FF8D84B250885822848ADFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A85D6273AC03B2047BB6EEC /* Pods-Red Riding Hood.debug.xcconfig */,
+				8151901C14B33DEA9496AD4F /* Pods-Red Riding Hood.release.xcconfig */,
+				D60D9ED98B45E0EE3BF94566 /* Pods-Red Riding HoodTests.debug.xcconfig */,
+				6A77AC69D446C38B16EF3635 /* Pods-Red Riding HoodTests.release.xcconfig */,
+				458BBA031F914E6BBEC3CA7C /* Pods-Red Riding HoodUITests.debug.xcconfig */,
+				BE70037A558E8B76A36CCBC8 /* Pods-Red Riding HoodUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		83A8DA0A1DAD48FB00312C6A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				83A8DA2A1DAD48FC00312C6A /* Red Riding HoodTests */,
 				83A8DA351DAD48FC00312C6A /* Red Riding HoodUITests */,
 				83A8DA141DAD48FB00312C6A /* Products */,
+				1FF8D84B250885822848ADFA /* Pods */,
+				FFE062F9E2617D940F25E6A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +141,13 @@
 		83A8DA151DAD48FB00312C6A /* Red Riding Hood */ = {
 			isa = PBXGroup;
 			children = (
+				83A8DA531DAD57DA00312C6A /* Extensions */,
+				83A8DA481DAD505500312C6A /* View Controllers */,
+				83A8DA471DAD503300312C6A /* State */,
+				83A8DA461DAD502500312C6A /* Routes */,
+				83A8DA451DAD501D00312C6A /* Reducers */,
+				83A8DA441DAD501200312C6A /* Actions */,
 				83A8DA161DAD48FC00312C6A /* AppDelegate.swift */,
-				83A8DA181DAD48FC00312C6A /* ViewController.swift */,
 				83A8DA1A1DAD48FC00312C6A /* Main.storyboard */,
 				83A8DA1D1DAD48FC00312C6A /* Assets.xcassets */,
 				83A8DA1F1DAD48FC00312C6A /* LaunchScreen.storyboard */,
@@ -125,6 +174,66 @@
 			path = "Red Riding HoodUITests";
 			sourceTree = "<group>";
 		};
+		83A8DA441DAD501200312C6A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				83A8DA4B1DAD516F00312C6A /* AuthenticationActions.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		83A8DA451DAD501D00312C6A /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				83A8DA4D1DAD519A00312C6A /* AppReducer.swift */,
+			);
+			name = Reducers;
+			sourceTree = "<group>";
+		};
+		83A8DA461DAD502500312C6A /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				83A8DA4F1DAD52D800312C6A /* RootRoutes.swift */,
+				83A8DA511DAD54EF00312C6A /* GreenViewRoutable.swift */,
+				83A8DA561DAD5BD200312C6A /* RedViewRoutable.swift */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
+		83A8DA471DAD503300312C6A /* State */ = {
+			isa = PBXGroup;
+			children = (
+				83A8DA491DAD50B800312C6A /* AppState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		83A8DA481DAD505500312C6A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83A8DA181DAD48FC00312C6A /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83A8DA531DAD57DA00312C6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83A8DA541DAD580100312C6A /* NavigationController+CompletionBlock.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FFE062F9E2617D940F25E6A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F394860296827D8D3A2D6DE2 /* Pods_Red_Riding_Hood.framework */,
+				903216AFCF01E898FEF87EB6 /* Pods_Red_Riding_HoodTests.framework */,
+				B980BF0BEDEE68D51EEB8D2A /* Pods_Red_Riding_HoodUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A8DA3B1DAD48FC00312C6A /* Build configuration list for PBXNativeTarget "Red Riding Hood" */;
 			buildPhases = (
+				60894615FD3C66F0359D5A64 /* [CP] Check Pods Manifest.lock */,
 				83A8DA0F1DAD48FB00312C6A /* Sources */,
 				83A8DA101DAD48FB00312C6A /* Frameworks */,
 				83A8DA111DAD48FB00312C6A /* Resources */,
+				47D7DB5C4CA689ED83A716B8 /* [CP] Embed Pods Frameworks */,
+				31E9F2D5619356F43D48688C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A8DA3E1DAD48FC00312C6A /* Build configuration list for PBXNativeTarget "Red Riding HoodTests" */;
 			buildPhases = (
+				898AC6C054E9B29AE28BDADC /* [CP] Check Pods Manifest.lock */,
 				83A8DA231DAD48FC00312C6A /* Sources */,
 				83A8DA241DAD48FC00312C6A /* Frameworks */,
 				83A8DA251DAD48FC00312C6A /* Resources */,
+				9C1F76FB5EB08F59AB5DC6DC /* [CP] Embed Pods Frameworks */,
+				90E78BF662EF3BA2A7D11BC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A8DA411DAD48FC00312C6A /* Build configuration list for PBXNativeTarget "Red Riding HoodUITests" */;
 			buildPhases = (
+				8DE133FBFA4F29F1FF5DD11B /* [CP] Check Pods Manifest.lock */,
 				83A8DA2E1DAD48FC00312C6A /* Sources */,
 				83A8DA2F1DAD48FC00312C6A /* Frameworks */,
 				83A8DA301DAD48FC00312C6A /* Resources */,
+				BE4CF4B8ABEBE6B91A945711 /* [CP] Embed Pods Frameworks */,
+				A5150422E063B082DAAD4759 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +372,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31E9F2D5619356F43D48688C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Riding Hood/Pods-Red Riding Hood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47D7DB5C4CA689ED83A716B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Riding Hood/Pods-Red Riding Hood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60894615FD3C66F0359D5A64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		898AC6C054E9B29AE28BDADC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE133FBFA4F29F1FF5DD11B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90E78BF662EF3BA2A7D11BC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Riding HoodTests/Pods-Red Riding HoodTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1F76FB5EB08F59AB5DC6DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Riding HoodTests/Pods-Red Riding HoodTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5150422E063B082DAAD4759 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Riding HoodUITests/Pods-Red Riding HoodUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE4CF4B8ABEBE6B91A945711 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Riding HoodUITests/Pods-Red Riding HoodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83A8DA0F1DAD48FB00312C6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A8DA571DAD5BD200312C6A /* RedViewRoutable.swift in Sources */,
+				83A8DA521DAD54EF00312C6A /* GreenViewRoutable.swift in Sources */,
+				83A8DA551DAD580100312C6A /* NavigationController+CompletionBlock.swift in Sources */,
+				83A8DA4A1DAD50B800312C6A /* AppState.swift in Sources */,
+				83A8DA501DAD52D800312C6A /* RootRoutes.swift in Sources */,
 				83A8DA191DAD48FC00312C6A /* ViewController.swift in Sources */,
 				83A8DA171DAD48FC00312C6A /* AppDelegate.swift in Sources */,
+				83A8DA4C1DAD516F00312C6A /* AuthenticationActions.swift in Sources */,
+				83A8DA4E1DAD519A00312C6A /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +596,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +646,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -408,7 +673,9 @@
 		};
 		83A8DA3C1DAD48FC00312C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A85D6273AC03B2047BB6EEC /* Pods-Red Riding Hood.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Red Riding Hood/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,7 +687,9 @@
 		};
 		83A8DA3D1DAD48FC00312C6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8151901C14B33DEA9496AD4F /* Pods-Red Riding Hood.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Red Riding Hood/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,6 +701,7 @@
 		};
 		83A8DA3F1DAD48FC00312C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60D9ED98B45E0EE3BF94566 /* Pods-Red Riding HoodTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +716,7 @@
 		};
 		83A8DA401DAD48FC00312C6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A77AC69D446C38B16EF3635 /* Pods-Red Riding HoodTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +731,7 @@
 		};
 		83A8DA421DAD48FC00312C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458BBA031F914E6BBEC3CA7C /* Pods-Red Riding HoodUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Red Riding HoodUITests/Info.plist";
@@ -473,6 +745,7 @@
 		};
 		83A8DA431DAD48FC00312C6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE70037A558E8B76A36CCBC8 /* Pods-Red Riding HoodUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Red Riding HoodUITests/Info.plist";
@@ -503,6 +776,7 @@
 				83A8DA3D1DAD48FC00312C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83A8DA3E1DAD48FC00312C6A /* Build configuration list for PBXNativeTarget "Red Riding HoodTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +785,7 @@
 				83A8DA401DAD48FC00312C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83A8DA411DAD48FC00312C6A /* Build configuration list for PBXNativeTarget "Red Riding HoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +794,7 @@
 				83A8DA431DAD48FC00312C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
