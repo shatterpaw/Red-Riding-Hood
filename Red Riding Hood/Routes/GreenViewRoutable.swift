@@ -17,16 +17,15 @@ class GreenViewRoutable: Routable {
     }
     
     func pushRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
-        if let navController = self.viewController as? UINavigationController {
+        if routeElementIdentifier == RedRoute {
             let redViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.RedViewControllerIdentifier)
-            navController.pushViewController(
-                viewController: redViewController,
-                animated: animated,
-                completion: completionHandler
-            )
+            
+            (self.viewController as! UINavigationController).pushViewController(viewController: redViewController, animated: animated, completion: completionHandler)
+            
+            return RedViewRoutable(viewController: self.viewController)
         }
         
-        return self
+        fatalError("Cannot handle this route change")
     }
     
     func popRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) {

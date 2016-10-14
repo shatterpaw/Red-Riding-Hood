@@ -18,12 +18,11 @@ class InitialViewRoutable: Routable {
     
     func pushRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
         if routeElementIdentifier == GreenRoute {
-            let greenViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.GreenViewControllerIdentifier)
+            completionHandler()
+            return setToGreenViewController(animated: animated, completionHandler: completionHandler)
             
-                (self.viewController as! UINavigationController).pushViewController(viewController: greenViewController, animated: animated, completion: completionHandler)
-                
-                return GreenViewRoutable(viewController: self.viewController)
-            
+        } else if routeElementIdentifier == RedRoute {
+            return setToRedViewController(animated: animated, completionHandler: completionHandler)
         }
         
         fatalError("Cannot handle this route change")
@@ -31,5 +30,33 @@ class InitialViewRoutable: Routable {
     
     func popRouteSegment(_ routeElementIdentifier: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) {
         completionHandler()
+    }
+    
+    func changeRouteSegment(_ from: RouteElementIdentifier, to: RouteElementIdentifier, animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
+        if to == GreenRoute {
+            completionHandler()
+            return setToGreenViewController(animated: animated, completionHandler: completionHandler)
+        } else if to == RedRoute {
+            completionHandler()
+            return setToRedViewController(animated: animated, completionHandler: completionHandler)
+        }
+        
+        fatalError("Cannot handle this route change")
+    }
+    
+    func setToRedViewController(animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
+        let redViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.RedViewControllerIdentifier)
+        
+        (self.viewController as! UINavigationController).pushViewController(viewController: redViewController, animated: animated, completion: completionHandler)
+        
+        return RedViewRoutable(viewController: self.viewController)
+    }
+    
+    func setToGreenViewController(animated: Bool, completionHandler: @escaping RoutingCompletionHandler) -> Routable {
+        let greenViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.GreenViewControllerIdentifier)
+        
+        (self.viewController as! UINavigationController).pushViewController(viewController: greenViewController, animated: animated, completion: completionHandler)
+        
+        return GreenViewRoutable(viewController: self.viewController)
     }
 }

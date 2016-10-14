@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Red View Controller-->
         <scene sceneID="VlX-HO-LOL">
             <objects>
-                <viewController storyboardIdentifier="RedViewController" id="ytr-OO-9pu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedViewController" id="ytr-OO-9pu" customClass="RedViewController" customModule="Red_Riding_Hood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w4F-9K-zbo"/>
                         <viewControllerLayoutGuide type="bottom" id="OS2-F6-7VW"/>
@@ -55,17 +55,33 @@
                     <view key="view" contentMode="scaleToFill" id="oFp-s7-ZXm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msf-FQ-QaO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="AzU-RR-nKm"/>
+                                    <constraint firstAttribute="height" constant="30" id="Q2s-X4-QhQ"/>
+                                </constraints>
+                                <state key="normal" title="Switch to Green view"/>
+                                <connections>
+                                    <action selector="switchButtonTapped:" destination="ytr-OO-9pu" eventType="touchUpInside" id="csi-0w-7hz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Msf-FQ-QaO" firstAttribute="centerX" secondItem="oFp-s7-ZXm" secondAttribute="centerX" id="HN8-pD-Uar"/>
+                            <constraint firstItem="Msf-FQ-QaO" firstAttribute="centerY" secondItem="oFp-s7-ZXm" secondAttribute="centerY" id="Uiw-uT-KvN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4w-9b-YLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731" y="-446"/>
+            <point key="canvasLocation" x="1730.4000000000001" y="-446.62668665667172"/>
         </scene>
-        <!--View Controller-->
+        <!--Green View Controller-->
         <scene sceneID="QGh-Ns-jbo">
             <objects>
-                <viewController storyboardIdentifier="GreenViewController" id="hee-de-USq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GreenViewController" id="hee-de-USq" customClass="GreenViewController" customModule="Red_Riding_Hood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ByY-TW-7ft"/>
                         <viewControllerLayoutGuide type="bottom" id="Oft-JG-VTY"/>
@@ -73,12 +89,28 @@
                     <view key="view" contentMode="scaleToFill" id="ZIu-g7-fgw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjc-Kj-ka9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="At9-Bp-q9T"/>
+                                    <constraint firstAttribute="height" constant="30" id="fL4-z5-h3P"/>
+                                </constraints>
+                                <state key="normal" title="Switch to Red view"/>
+                                <connections>
+                                    <action selector="switchButtonTapped:" destination="hee-de-USq" eventType="touchUpInside" id="Gqo-a8-8NO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jjc-Kj-ka9" firstAttribute="centerX" secondItem="ZIu-g7-fgw" secondAttribute="centerX" id="JvN-BB-Jzh"/>
+                            <constraint firstItem="jjc-Kj-ka9" firstAttribute="centerY" secondItem="ZIu-g7-fgw" secondAttribute="centerY" id="sY5-Rw-aHM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlF-Lr-7p8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="-445"/>
+            <point key="canvasLocation" x="2461.5999999999999" y="-445.72713643178412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NMe-6Z-lx5">

@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		1F2ADD8ECA0F2BBE56506BB0 /* Pods_Red_Riding_Hood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F394860296827D8D3A2D6DE2 /* Pods_Red_Riding_Hood.framework */; };
 		39EEECBEA4DE065C5B037631 /* Pods_Red_Riding_HoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903216AFCF01E898FEF87EB6 /* Pods_Red_Riding_HoodTests.framework */; };
-		837752481DB1345900EDFCA1 /* ViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837752471DB1345900EDFCA1 /* ViewControllerActions.swift */; };
 		8377524A1DB1375E00EDFCA1 /* InitialViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837752491DB1375E00EDFCA1 /* InitialViewRoutable.swift */; };
 		8377524C1DB140EC00EDFCA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377524B1DB140EC00EDFCA1 /* Constants.swift */; };
+		837752641DB14DAB00EDFCA1 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837752631DB14DAB00EDFCA1 /* RedViewController.swift */; };
+		837752661DB14DB800EDFCA1 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837752651DB14DB800EDFCA1 /* GreenViewController.swift */; };
 		83A8DA171DAD48FC00312C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA161DAD48FC00312C6A /* AppDelegate.swift */; };
 		83A8DA191DAD48FC00312C6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA181DAD48FC00312C6A /* ViewController.swift */; };
 		83A8DA1C1DAD48FC00312C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A8DA1A1DAD48FC00312C6A /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		83A8DA2C1DAD48FC00312C6A /* Red_Riding_HoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA2B1DAD48FC00312C6A /* Red_Riding_HoodTests.swift */; };
 		83A8DA371DAD48FC00312C6A /* Red_Riding_HoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA361DAD48FC00312C6A /* Red_Riding_HoodUITests.swift */; };
 		83A8DA4A1DAD50B800312C6A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA491DAD50B800312C6A /* AppState.swift */; };
-		83A8DA4C1DAD516F00312C6A /* AuthenticationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA4B1DAD516F00312C6A /* AuthenticationActions.swift */; };
 		83A8DA4E1DAD519A00312C6A /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA4D1DAD519A00312C6A /* AppReducer.swift */; };
 		83A8DA501DAD52D800312C6A /* RootRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA4F1DAD52D800312C6A /* RootRoutes.swift */; };
 		83A8DA521DAD54EF00312C6A /* GreenViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DA511DAD54EF00312C6A /* GreenViewRoutable.swift */; };
@@ -50,9 +50,10 @@
 		458BBA031F914E6BBEC3CA7C /* Pods-Red Riding HoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding HoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding HoodUITests/Pods-Red Riding HoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A77AC69D446C38B16EF3635 /* Pods-Red Riding HoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding HoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding HoodTests/Pods-Red Riding HoodTests.release.xcconfig"; sourceTree = "<group>"; };
 		8151901C14B33DEA9496AD4F /* Pods-Red Riding Hood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Riding Hood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red Riding Hood/Pods-Red Riding Hood.release.xcconfig"; sourceTree = "<group>"; };
-		837752471DB1345900EDFCA1 /* ViewControllerActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerActions.swift; path = Actions/ViewControllerActions.swift; sourceTree = "<group>"; };
 		837752491DB1375E00EDFCA1 /* InitialViewRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewRoutable.swift; path = Routes/InitialViewRoutable.swift; sourceTree = "<group>"; };
-		8377524B1DB140EC00EDFCA1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8377524B1DB140EC00EDFCA1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		837752631DB14DAB00EDFCA1 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedViewController.swift; path = "View Controllers/RedViewController.swift"; sourceTree = "<group>"; };
+		837752651DB14DB800EDFCA1 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreenViewController.swift; path = "View Controllers/GreenViewController.swift"; sourceTree = "<group>"; };
 		83A8DA131DAD48FB00312C6A /* Red Riding Hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red Riding Hood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A8DA161DAD48FC00312C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A8DA181DAD48FC00312C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		83A8DA361DAD48FC00312C6A /* Red_Riding_HoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red_Riding_HoodUITests.swift; sourceTree = "<group>"; };
 		83A8DA381DAD48FC00312C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A8DA491DAD50B800312C6A /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = State/AppState.swift; sourceTree = "<group>"; };
-		83A8DA4B1DAD516F00312C6A /* AuthenticationActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationActions.swift; path = Actions/AuthenticationActions.swift; sourceTree = "<group>"; };
 		83A8DA4D1DAD519A00312C6A /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppReducer.swift; path = Reducers/AppReducer.swift; sourceTree = "<group>"; };
 		83A8DA4F1DAD52D800312C6A /* RootRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootRoutes.swift; path = Routes/RootRoutes.swift; sourceTree = "<group>"; };
 		83A8DA511DAD54EF00312C6A /* GreenViewRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreenViewRoutable.swift; path = Routes/GreenViewRoutable.swift; sourceTree = "<group>"; };
@@ -125,7 +125,6 @@
 		83A8DA0A1DAD48FB00312C6A = {
 			isa = PBXGroup;
 			children = (
-				8377524B1DB140EC00EDFCA1 /* Constants.swift */,
 				83A8DA151DAD48FB00312C6A /* Red Riding Hood */,
 				83A8DA2A1DAD48FC00312C6A /* Red Riding HoodTests */,
 				83A8DA351DAD48FC00312C6A /* Red Riding HoodUITests */,
@@ -148,6 +147,7 @@
 		83A8DA151DAD48FB00312C6A /* Red Riding Hood */ = {
 			isa = PBXGroup;
 			children = (
+				8377524B1DB140EC00EDFCA1 /* Constants.swift */,
 				83A8DA531DAD57DA00312C6A /* Extensions */,
 				83A8DA481DAD505500312C6A /* View Controllers */,
 				83A8DA471DAD503300312C6A /* State */,
@@ -184,8 +184,6 @@
 		83A8DA441DAD501200312C6A /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				83A8DA4B1DAD516F00312C6A /* AuthenticationActions.swift */,
-				837752471DB1345900EDFCA1 /* ViewControllerActions.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -221,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				83A8DA181DAD48FC00312C6A /* ViewController.swift */,
+				837752631DB14DAB00EDFCA1 /* RedViewController.swift */,
+				837752651DB14DB800EDFCA1 /* GreenViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -528,12 +528,12 @@
 				83A8DA521DAD54EF00312C6A /* GreenViewRoutable.swift in Sources */,
 				83A8DA551DAD580100312C6A /* NavigationController+CompletionBlock.swift in Sources */,
 				8377524A1DB1375E00EDFCA1 /* InitialViewRoutable.swift in Sources */,
+				837752641DB14DAB00EDFCA1 /* RedViewController.swift in Sources */,
 				83A8DA4A1DAD50B800312C6A /* AppState.swift in Sources */,
+				837752661DB14DB800EDFCA1 /* GreenViewController.swift in Sources */,
 				83A8DA501DAD52D800312C6A /* RootRoutes.swift in Sources */,
 				83A8DA191DAD48FC00312C6A /* ViewController.swift in Sources */,
 				83A8DA171DAD48FC00312C6A /* AppDelegate.swift in Sources */,
-				83A8DA4C1DAD516F00312C6A /* AuthenticationActions.swift in Sources */,
-				837752481DB1345900EDFCA1 /* ViewControllerActions.swift in Sources */,
 				83A8DA4E1DAD519A00312C6A /* AppReducer.swift in Sources */,
 				8377524C1DB140EC00EDFCA1 /* Constants.swift in Sources */,
 			);
