@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return state.navigationState
         })
         
-        store.dispatch(ReSwiftRouter.SetRouteAction([GreenRoute]))
+        store.dispatch(ReSwiftRouter.SetRouteAction([InitialViewRoute]))
         
         
         window?.makeKeyAndVisible()
